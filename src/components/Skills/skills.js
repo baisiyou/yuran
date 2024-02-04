@@ -1,5 +1,5 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { DiReact, DiZend } from "react-icons/di";
 import {
   Section,
   SectionDivider,
@@ -16,19 +16,35 @@ import {
 
 const Skills = () => (
   <Section id="skills">
-    <SectionDivider />
     <br />
+    <SectionDivider />
     <SectionTitle>Skills</SectionTitle>
     <SectionText>Below is a list of technical skills I possess:</SectionText>
     <List>
       <ListItem>
-        <DiReact size="3rem" />
-        <DiFirebase size="3rem" />
         <ListContainer>
-          <ListTitle>FrontEnd + BackEnd</ListTitle>
+          <ListTitle>Programming Languages</ListTitle>
+          <ListParagraph>
+            C++, Java, Python, C, HTML, CSS, Javascript, Ocaml, Bash
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <DiReact size="3rem" />
+        <ListContainer>
+          <ListTitle>FrontEnd Frameworks</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node.js, React.js, Next.js
+            Node.js, React.js, Next.js, Express.js
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <ListContainer>
+          <ListTitle>AI/ML related Libraries</ListTitle>
+          <ListParagraph>
+            Familiarity with common Python ML libraries, including Pandas,
+            Tensorflow, Pytorch, Scikit-Learn and Java Neuroph Library
           </ListParagraph>
         </ListContainer>
       </ListItem>

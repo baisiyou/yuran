@@ -1,4 +1,4 @@
-import Acomplishments from "../components/Acomplishments/Acomplishments";
+import Activities from "../components/Activities/Activities";
 import BgAnimation from "../components/BackgrooundAnimation/BackgroundAnimation";
 import Hero from "../components/Hero/Hero";
 import Projects from "../components/Projects/Projects";
@@ -14,10 +14,10 @@ const Home = () => {
         <Hero />
         <BgAnimation />
       </Section>
-      <Projects />
       <Skills />
+      <Projects />
       <Timeline />
-      <Acomplishments />
+      <Activities />
     </Layout>
   );
 };

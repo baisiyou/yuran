@@ -12,6 +12,7 @@ import {
   SocialIcons,
   Span,
 } from "./HeaderStyles";
+import { LinkContainer } from "../../styles/GlobalComponents";
 
 const Header = () => (
   <Container>
@@ -31,18 +32,29 @@ const Header = () => (
     </Div1>
     <Div2>
       <li>
-        <Link href="#projects">
-          <NavLink>Projects</NavLink>
-        </Link>
-      </li>
-      <li>
         <Link href="#skills">
-          <NavLink>Skills</NavLink>
+          <LinkContainer>
+            <NavLink>Skills</NavLink>
+          </LinkContainer>
         </Link>
       </li>
       <li>
-        <Link href="#experiences">
-          <NavLink>About</NavLink>
+        <Link href="#projects">
+          <LinkContainer>
+            <NavLink>Projects</NavLink>
+          </LinkContainer>
+        </Link>
+      </li>
+      <Link href="#experiences">
+        <LinkContainer>
+          <NavLink>Experiences</NavLink>
+        </LinkContainer>
+      </Link>
+      <li>
+        <Link href="#activities">
+          <LinkContainer>
+            <NavLink>Activities</NavLink>
+          </LinkContainer>
         </Link>
       </li>
     </Div2>
